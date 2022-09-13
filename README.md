@@ -12,11 +12,8 @@
 <br>
 
 - [Intro](#Intro)
-- [Installation](#Installation)
-- [Add complements](#Add-complements)
-- [Default configuration](#default-configuration)
-- [Integration with Windows Terminal](#integration-with-windows-terminal)
-- [Donate](#Donate)
+- [Instalacion](#Instalacion)
+- [Donacion](#Donacion)
 - [LICENSE](#LICENSE)
 
 ----
@@ -42,7 +39,7 @@ autor de la implementacion de la animacion en el teclado crkbd [ardakilic](https
 Todo el credito para el autor de la animacion de bongocat_keyboard y luna el perro [DLopezGo90](https://www.youtube.com/watch?v=XD8rC4zkc6Q&list=PLq8VOFVQEynRsCf92ElMUzynXF0p9LZ-0&index=10&ab_channel=DLopezGo90).
 De ahi tome el codigo la animacion de bongocat_keyboard y Luna el perro.
 
-# Installation
+# Instalacion
 Si no tienes instalado [qmk](https://docs.qmk.fm/#/cli), entonces es lo primero que tienes que hacer.
 
 Para MacOS/linux con homebrew:
