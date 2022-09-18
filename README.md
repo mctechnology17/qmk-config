@@ -104,8 +104,7 @@ Aquí puedes ver otro proyecto publicado recientemente:
 
 # [LICENSE](LICENSE)
 
-Released under the GNU General Public License v3.0.
-
+GNU General Public License v2.0
 Copyright (c) 2022 Marcos Chow Castro
 
 [twitter]: https://twitter.com/mctechnology17
