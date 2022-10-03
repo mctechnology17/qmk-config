@@ -65,7 +65,7 @@ has() {
 usage(){
 cat <<END
   Usage:
-    bash -c "$(curl -fsSL https://github.com/mctechnology17/qmk-config/blob/main/setup.sh)"
+    bash -c "$(curl -fsSL https://raw.githubusercontent.com/mctechnology17/qmk-config/main/setup.sh)"
 END
   exit 1
 }
