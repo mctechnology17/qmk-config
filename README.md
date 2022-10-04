@@ -63,11 +63,7 @@ Ahora simplemente clona este [repositorio](https://github.com/mctechnology17/qmk
 y sigue los siguientes pasos:
 
 ```bash
-cd ~/qmk_firmware/keyboards/crkbd/keymaps
-git clone https://github.com/mctechnology17/qmk-config.git
-mv qmk-config mctechnology17
-cd mctechnology17
-rm -rf .git
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/mctechnology17/qmk-config/main/setup.sh)"
 ```
 
 Ejecuta y compila el firware.
