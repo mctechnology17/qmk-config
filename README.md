@@ -55,12 +55,12 @@ INTELLECTUAL OWNER OF ANY CODE THAT YOU USE HERE AND DON'T MENTION IT, PLEASE
 LET ME KNOW AND I'LL MODIFY THE REFERENCES.
 
 ---
-bongocat: [![bongocat](https://github.com/mctechnology17/mctechnology17/blob/main/src/bongocat_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
-demon:[![demon](https://github.com/mctechnology17/mctechnology17/blob/main/src/demon_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
-luna: [![luna](https://github.com/mctechnology17/mctechnology17/blob/main/src/luna_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
-crab: [![crab](https://github.com/mctechnology17/mctechnology17/blob/main/src/crab_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
-ocean-dream:  [![ocean-dream](https://github.com/mctechnology17/mctechnology17/blob/main/src/ocean-dream_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
-music-bars: [![music-bars](https://github.com/mctechnology17/mctechnology17/blob/main/src/music-bars_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![bongocat](https://github.com/mctechnology17/mctechnology17/blob/main/src/bongocat_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![demon](https://github.com/mctechnology17/mctechnology17/blob/main/src/demon_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![luna](https://github.com/mctechnology17/mctechnology17/blob/main/src/luna_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![crab](https://github.com/mctechnology17/mctechnology17/blob/main/src/crab_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![ocean-dream](https://github.com/mctechnology17/mctechnology17/blob/main/src/ocean-dream_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![music-bars](https://github.com/mctechnology17/mctechnology17/blob/main/src/music-bars_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
 ---
 
 # Quick installation
