@@ -5,14 +5,6 @@ Author: Marcos Ivan Chow Castro @mctechnology17
 Email: mctechnology170318@gmail.com
 GitHub: https://github.com/mctechnology17
 Brief: readme file for the wired corne keyboard
-                           ╔═╦═╦═╗
-                    ╔════╗ ║║║║║╔╝
-                    ║╔╗╔╗║ ║║║║║╚╗
-                    ╚╝║║╚╝ ║╠═╩╩═╝
-                      ║╠═╦═╣╚╦═╦╦═╦╗╔═╦═╦╦╗
-                      ║║╩╣═╣║║║║║╬║╚╣╬║╬║║║
-                      ╚╩═╩═╩╩╩╩═╩═╩═╩═╬╗╠╗║
-                                      ╚═╩═╝
 ---
 
 [![MC Technology](https://github.com/mctechnology17/mctechnology17/blob/main/src/mctechnology_extendido.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
@@ -71,16 +63,13 @@ THE ANIMATIONS TO THEIR RESPECTIVE AUTHORS MENTIONED. IF YOU ARE THE
 INTELLECTUAL OWNER OF ANY CODE THAT YOU USE HERE AND DON'T MENTION IT, PLEASE
 LET ME KNOW AND I'LL MODIFY THE REFERENCES.
 
-<div align="center">
-
-  [<img align="center" alt="bongocat" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/bongocat_mc.GIF" />][youtube]
-  [<img align="center" alt="demon" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/demon_mc.GIF" />][youtube]
-  [<img align="center" alt="luna" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/luna_mc.GIF" />][youtube]
-  [<img align="center" alt="crab" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/crab_mc.GIF" />][youtube]
-  [<img align="center" alt="ocean dream" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/ocean-dream_mc.GIF" />][youtube]
-  [<img align="center" alt="music bar" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/music-bars_mc.GIF" />][youtube]
-
-</div>
+[![bongocat](https://github.com/mctechnology17/mctechnology17/blob/main/src/bongocat_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![demon](https://github.com/mctechnology17/mctechnology17/blob/main/src/demon_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![luna](https://github.com/mctechnology17/mctechnology17/blob/main/src/luna_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![crab](https://github.com/mctechnology17/mctechnology17/blob/main/src/crab_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![ocean-dream](https://github.com/mctechnology17/mctechnology17/blob/main/src/ocean-dream_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![ocean-dream](https://github.com/mctechnology17/mctechnology17/blob/main/src/ocean-dream_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
+[![music-bars](https://github.com/mctechnology17/mctechnology17/blob/main/src/music-bars_mc.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
 
 # Quick installation
 Just execute the following line in your terminal.
