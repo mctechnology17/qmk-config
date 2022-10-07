@@ -68,6 +68,7 @@ Just execute the following line in your terminal.
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/mctechnology17/qmk-config/main/setup.sh)"
 ```
+ENJOY!
 
 # Installation QMK
 If you don't have [qmk](https://docs.qmk.fm/#/cli) installed, then this is the first thing to do.
