@@ -1,7 +1,7 @@
 /* ========================================
 FileName: config.h
 Date: 15:40 05.September.2022
-Author: Marcos Chow Castro
+Author: Marcos Ivan Chow Castro @mctechnology17
 Email: mctechnology170318@gmail.com
 GitHub: https://github.com/mctechnology17
 Brief: delcarar macros y carga fuentes
@@ -10,9 +10,9 @@ SIENTETE LIBRE DE MODIFICAR EL CODIGO A TU GUSTO O DE OCUPAR LO QUE NECESITES
 NO OLVIDES REFERENCIAR A LOS AUTORES DE LOS CODIGOS QUE OCUPES
 ========================================= */
 #pragma once
+// #define COMBO_COUNT 2
 // ### define master o slave{{{
-// #define MASTER_LEFT
-#define MASTER_RIGHT
+#define MASTER_LEFT
 // #define EE_HANDS
 // #define MASTER_RIGHT
 // }}}

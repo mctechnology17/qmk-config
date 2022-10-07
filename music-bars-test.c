@@ -4,54 +4,33 @@ Date: 15:40 05.September.2022
 Author: Marcos Chow Castro
 Email: mctechnology170318@gmail.com
 GitHub: https://github.com/mctechnology17
-Brief: QMK oled animations for music bars
-===========================================
-Utilities for QMK oled animations
+Brief: matrix para la animacion music-bars
+========================================= */
+/* ### REFERENCIAS
+Music bar animation with fast/slow typing mode
+ROTATION:
+OLED_ROTATION_0
 Copyright (c) Marek Piechut
 MIT License
-                           ╔═╦═╦═╗
-                    ╔════╗ ║║║║║╔╝
-                    ║╔╗╔╗║ ║║║║║╚╗
-                    ╚╝║║╚╝ ║╠═╩╩═╝
-                      ║╠═╦═╣╚╦═╦╦═╦╗╔═╦═╦╦╗
-                      ║║╩╣═╣║║║║║╬║╚╣╬║╬║║║
-                      ╚╩═╩═╩╩╩╩═╩═╩═╩═╬╗╠╗║
-                                      ╚═╩═╝
 
-Copyright 2022 Marcos Ivan Chow Castro @mctechnology17
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 2 of the License, or
-(at your option) any later version.
+Todo el credito para el autor de las animaciones de crab, demon y music-bar
+https://github.com/marekpiechut/qmk-animations.git
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see <http://www.gnu.org/licenses/>.
+SIENTETE LIBRE DE MODIFICAR EL CODIGO A TU GUSTO O DE OCUPAR LO QUE NECESITES
+NO OLVIDES REFERENCIAR A LOS AUTORES DE LOS CODIGOS QUE OCUPES
 */
 // #pragma once
-//
-// //-------- CONFIGURATION START --------
-// #ifndef FAST_TYPE_WPM
-// #    define FAST_TYPE_WPM 45 // Switch to fast animation when over words per minute
-// #endif
-// //-------- CONFIGURATION END--------
-//
-// #define ANIM_SIZE 512
-// #define ANIM_FRAME 300
 
-// NOTE: temporary fix
-#include "quantum.h"
-#include "print.h"
-#include "oled_driver.h"
 #include <stdio.h>
-#include "music-bars.h"
-#include "animation-utils.h"
+//-------- CONFIGURATION START --------
+#ifndef FAST_TYPE_WPM
+#    define FAST_TYPE_WPM 45 // Switch to fast animation when over words per minute
+#endif
+//-------- CONFIGURATION END--------
 
-// NOTE: static delete because it is not working
+#define ANIM_SIZE 512
+#define ANIM_FRAME 300
+
 void oled_render_anim(void) {
     // 'high2', 128x32px
     static const char ANIM_FRAME1[] PROGMEM = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x7e, 0x00,

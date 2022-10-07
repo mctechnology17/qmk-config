@@ -1,3 +1,20 @@
+---
+FileName: README.md
+Date: 15:17 23.September.2022
+Author: Marcos Ivan Chow Castro @mctechnology17
+Email: mctechnology170318@gmail.com
+GitHub: https://github.com/mctechnology17
+Brief: readme file for the wired corne keyboard
+                           ╔═╦═╦═╗
+                    ╔════╗ ║║║║║╔╝
+                    ║╔╗╔╗║ ║║║║║╚╗
+                    ╚╝║║╚╝ ║╠═╩╩═╝
+                      ║╠═╦═╣╚╦═╦╦═╦╗╔═╦═╦╦╗
+                      ║║╩╣═╣║║║║║╬║╚╣╬║╬║║║
+                      ╚╩═╩═╩╩╩╩═╩═╩═╩═╬╗╠╗║
+                                      ╚═╩═╝
+---
+
 [![MC Technology](https://github.com/mctechnology17/mctechnology17/blob/main/src/mctechnology_extendido.GIF)](https://www.youtube.com/channel/UC_mYh5PYPHBJ5YYUj8AIkcw)
 
 <div align="center">
@@ -12,97 +29,157 @@
 <br>
 
 - [Intro](#Intro)
-- [Instalacion](#Instalacion)
-- [Donacion](#Donacion)
+- [Quick installation](#Quick-installation)
+- [Installation QMK](#Installation-QMK)
+- [Trobelshooting](#Trobelshooting)
+- [Donate](#Donate)
 - [LICENSE](#LICENSE)
 
 ----
 
 # Intro
 
-Este repositorio contiene mi configuracion personal de mi teclado corne y algunas animaciones para para la pantalla OLED.
+This repository contains MY PERSONAL SETTINGS FOR MY CORNE KEYBOARD and SOME
+ANIMATIONS FOR THE OLED SCREEN.
 
-[QMK](https://github.com/qmk/qmk_firmware) firmware del teclado. Testeado en mi teclado corne.
+[QMK](https://github.com/qmk/qmk_firmware) keyboard firmware. Tested on my
+corne keyboard.
 
-NO ME HAGO RESPONSABLE DE NINGUN DAÑO QUE PUEDA OCASIONAR ESTE CODIGO, UTILIZALO
-BAJO TU PROPIO RIESGO.
+I AM NOT RESPONSIBLE FOR ANY DAMAGE THAT MAY CAUSE THIS CODE, USE IT
+AT YOUR OWN RISK.
 
-SIENTETE LIBRE DE MODIFICAR EL CODIGO A TU GUSTO O DE OCUPAR LO QUE NECESITES
-NO OLVIDES REFERENCIAR A LOS AUTORES DE LOS CODIGOS QUE OCUPES
+FEEL FREE TO MODIFY THE CODE TO YOUR TASTE OR TO USE WHAT YOU NEED
+DO NOT FORGET TO REFERENCE THE AUTHORS OF THE CODES YOU USE
 
-Todo el credito para el autor de las animaciones de crab, demon y music-bar
+All credit to the author of the crab, demon and music-bar animations
 [Marek Piechut](https://github.com/marekpiechut/qmk-animations.git).
 
-Todo el credito para el autor de la animacion de [bongocat](https://github.com/nwii/oledbongocat) y el
-autor de la implementacion de la animacion en el teclado crkbd [ardakilic](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd/keymaps/ardakilic)
+All credit to the author of the [bongocat animation](https://github.com/nwii/oledbongocat) and the
+author of keyboard animation implementation crkbd [ardakilic](https://github.com/qmk/qmk_firmware/tree/master/keyboards/crkbd/keymaps/ardakilic)
 
-Todo el credito para el autor de la animacion de bongocat_keyboard y luna el perro [DLopezGo90](https://www.youtube.com/watch?v=XD8rC4zkc6Q&list=PLq8VOFVQEynRsCf92ElMUzynXF0p9LZ-0&index=10&ab_channel=DLopezGo90).
-De ahi tome el codigo la animacion de bongocat_keyboard y Luna el perro.
+All credit to the author of the bongocat_keyboard animation and luna the dog
+[DLopezGo90](https://www.youtube.com/watch?v=XD8rC4zkc6Q&list=PLq8VOFVQEynRsCf92ElMUzynXF0p9LZ-0&index=10&ab_channel=DLopezGo90).
+From there I took the code for the animation of bongocat_keyboard and Luna the
+dog.
 
-# Instalacion
-Si no tienes instalado [qmk](https://docs.qmk.fm/#/cli), entonces es lo primero que tienes que hacer.
+All credit to the author of **Ocean Dream** + LUNA Tyler Thrailkill
+@snowe/@snowe2010 <tyler.b.thrailkill@gmail.com>.
 
-Para MacOS/linux con homebrew:
+I DIDN'T CREATE THE ANIMATIONS, I JUST MADE A KIND OF BY MANY ANIMATIONS CODE
+AND IMPLEMENTED THEM IN MY KEYMAPS WITH SOME MODIFICATIONS, ALL THE CREDIT OF
+THE ANIMATIONS TO THEIR RESPECTIVE AUTHORS MENTIONED. IF YOU ARE THE
+INTELLECTUAL OWNER OF ANY CODE THAT YOU USE HERE AND DON'T MENTION IT, PLEASE
+LET ME KNOW AND I'LL MODIFY THE REFERENCES.
+
+<div align="center">
+
+  [<img align="center" alt="bongocat" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/bongocat_mc.GIF" />][youtube]
+  [<img align="center" alt="demon" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/demon_mc.GIF" />][youtube]
+  [<img align="center" alt="luna" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/luna_mc.GIF" />][youtube]
+  [<img align="center" alt="crab" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/crab_mc.GIF" />][youtube]
+  [<img align="center" alt="ocean dream" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/ocean-dream_mc.GIF" />][youtube]
+  [<img align="center" alt="music bar" width="22px" src="https://github.com/mctechnology17/mctechnology17/blob/main/src/music-bars_mc.GIF" />][youtube]
+
+</div>
+
+# Quick installation
+Just execute the following line in your terminal.
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/mctechnology17/qmk-config/main/setup.sh)"
+```
+
+# Installation QMK
+If you don't have [qmk](https://docs.qmk.fm/#/cli) installed, then this is the first thing to do.
+
+MacOS/linux with homebrew:
 ```bash
 brew install qmk/qmk/qmk
 qmk setup
 ```
 
-Para Windows:
- - Editor de texto recomiendo `vim/nvim`
- - Instalar [qmk_toolbox](https://github.com/qmk/qmk_toolbox/releases).
-   Un programa gráfico para Windows y macOS que permite programar y depurar su teclado personalizado
- - Instalar consola [qmk_distro_msys](https://github.com/qmk/qmk_distro_msys/releases)
- - Abrir ambos programas qmk_toolbox y qmk_distro_msys
- - En qmk_distro_msys ecutar el siguiente comando:
+Windows:
+ - Download and instalall [qmk_toolbox](https://github.com/qmk/qmk_toolbox/releases).
+ - Download and instalall [qmk_distro_msys](https://github.com/qmk/qmk_distro_msys/releases)
+ - Execute qmk_toolbox and qmk_distro_msys
+ - In qmk_distro_msys execute the following commands:
 ```bash
-qmk setup # En la mayoría de las situaciones querrá responder y a todas las indicaciones.
+qmk setup # yes to all
 ```
 
-Ahora simplemente clona este [repositorio](https://github.com/mctechnology17/qmk-config.git) en la ruta `~/qmk_firmware/keyboards/crkbd/keymaps`
-y sigue los siguientes pasos:
-
+Just execute the following line in your terminal
 ```bash
 bash -c "$(curl -fsSL https://raw.githubusercontent.com/mctechnology17/qmk-config/main/setup.sh)"
+y # confirm the installation
 ```
 
-Ejecuta y compila el firware.
+To manual compilate
 ```bash
-qmk compile -kb crkbd -km mctechnology17 # compilar
+qmk compile -kb crkbd -km qmk-config
 ```
 
-Abre la carpeta con el compilado y arrastra el archivo `crkbd_rev1_mctechnology17.hex` hacia el programa qmk_toolbox,
-conectas una mitad de tu teclado corne y presionas el boton de reset, luego en el programa QMK ToolBox presionas el
-boton de flash y esperas a que termine el proceso. Repite el proceso con la otra mitad del teclado.
-Por aca te dejo la ruta de la la carpeta donde se encuentra el archivo compilado:
+Open the build folder and drag the `crkbd_rev1_mctechnology17.hex` file into
+the qmk_toolbox program, you connect one half of your corne keyboard and press
+the reset button, then in the QMK ToolBox program you press the
+flash button and wait for the process to finish. Repeat the process with the
+other half of the keyboard. Here I leave the path of the folder where the
+compiled file is located:
+
 ```bash
-open ~/qmk_firmware/.build # para macos abre la carpeta con el compilado
-xdg-open ~/qmk_firmware/.build # para linux abre la carpeta con el compilado
-C:\Users\USUARIO\qmk_firmware\.build # para windows abre la carpeta con el compilado
+open ~/qmk_firmware/.build # OSX
+xdg-open ~/qmk_firmware/.build # Linux
+C:\Users\USUARIO\qmk_firmware\.build # Windows
 ```
 
-# Donacion
-Si disfrutas de mi trabajo, siéntete libre de donar o convertirte en patrocinador.
+# Trobelshooting
+THE FLAGS AND CONFIGURATIONS ARE TOO MANY TO MENTION THEM ONE BY ONE, I AM
+TRYING TO DO IT IN A SUMMARIZED WAY AND I WILL TRY TO UPLOAD A MORE EXTENDED
+DOCUMENTATION, IF YOU WANT MORE DETAILS ABOUT THE FLAGS PLEASE CONSULT THE
+REFERENCES OF THE AUTHORS CITED ABOVE.
+
+On [rules.mk](./rules.mk) you can simply modify the following parameters with a
+yes or no to activate them
+
+- yes = activate
+- no = deactivate
+```make
+OCEAN_DREAM_ENABLE = no # slave
+LUNA_ENABLE = no # master
+BONGOCAT_ENABLE = no # slave
+CRAB_ENABLE = yes # slave (default)
+DEMON_ENABLE = no # slave
+DOG_ENABLE = yes # master and smaller as LUNA_ENABLE (default)
+BONGOCAT_KEYBOARD_ENABLE = no # slave and smaller as BONGOCAT_ENABLE
+MUSIC_BARS_ENABLE = no # TODO slave
+```
+IF SOMETHING DOES NOT COMPILE FOR YOU, CHECK THE SIZE OF WHAT YOU ARE ACTIVATING.
+
+# Donate
+If you're enjoy my work, feel free to donate or become a sponsor.
 - [paypal]
 - [sponsor]
 
-Emsamblador y creador/mantenedor de vimtools, GitManager y más,
-que son herramientas de trabajo fáciles de integrar, pero muy potentes que te permiten
-mejore su flujo de trabajo, integrándose con todos los sistemas operativos y todas las
-shells(zsh, fish, bash, etc.) posibles.
+Ambassador and creator/maintainer of vimtools, GitManager and more,
+that are easy to integrate, but very powerful work tools that allow you to
+improve your workflow, integrating with all operating systems and all
+possible shells.
 
-Aquí puedes ver otro proyecto publicado recientemente:
-- [vimtools] navaja suiza para vim (funciones y configuraciones que te facilitarán la vida)
-- [gm] administrador multiplataforma GIT con una interfaz de usuario amigable
-- [vim-better-header] la mejor plantilla automatizada
-- [vim-executor] Ejecutador de código multilenguaje
+Here you can see another recently published project:
+- [vimtools] swiss army knife for vim (functions and settings that will make it easy for you life)
+- [gm] manager for GIT multi platform with a friendly user interface
+- [vim-better-header] better automated template
+- [vim-executor] multilanguage code executor.
+
+# ToDo
+
+- [ ] implement music bar animation
+- [ ] fix other small error
+- [ ] add more animations
 
 
 # [LICENSE](LICENSE)
 
-Released under the GNU General Public License v3.0.
-
-Copyright (c) 2022 Marcos Chow Castro
+Copyright QMK Community
+Copyright (c) 2022 Marcos Ivan Chow Castro @mctechnology17
 
 [twitter]: https://twitter.com/mctechnology17
 [youtube]: https://www.youtube.com/c/mctechnology17

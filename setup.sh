@@ -126,7 +126,7 @@ if [ "$setup_continue" = "y" ]; then # y {{{
     error 'Could not find the command "git"'
     exit 1
   fi
-  # ckeck if mctechnology17 dir exists
+  # ckeck if qmk-config dir exists
   if [ ! -d ~/qmk-config ]; then
     info 'Clone qmk-config to HOME'
     git clone https://github.com/mctechnology17/qmk-config.git
@@ -143,17 +143,12 @@ if [ "$setup_continue" = "y" ]; then # y {{{
     rm -rfv ~/qmk_firmware/keyboards/crkbd/keymaps/qmk-config/.git
   fi
 
-  if [ ! -d ~/qmk_firmware/keyboards/crkbd/keymaps/mctechnology17 ]; then
-    info 'Rename folder qmk-config to mctechnology17'
-    mv ~/qmk_firmware/keyboards/crkbd/keymaps/qmk-config ~/qmk_firmware/keyboards/crkbd/keymaps/mctechnology17
-  fi
-
   # check if qmk is installed
   if ! has qmk; then
     error 'Could not find the command "qmk"'
     exit 1
   fi
-  # qmk compile -kb crkbd -km mctechnology17
+
   qmk compile -kb crkbd -km qmk-config
   case `uname -s` in
     Darwin) open ~/qmk_firmware/.build && open -a QMK\ Toolbox ;;

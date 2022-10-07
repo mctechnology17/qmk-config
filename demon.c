@@ -1,34 +1,57 @@
 /* ========================================
-FileName: crab.c
+FileName: demon.c
 Date: 15:40 05.September.2022
-Author: Marcos Chow Castro
+Author: Marcos Ivan Chow Castro @mctechnology17
 Email: mctechnology170318@gmail.com
 GitHub: https://github.com/mctechnology17
-Brief: matrix para la animacion demon
-========================================= */
-/* ### REFERENCIAS
-Big daemon animation with slow and fast typing mode
-Thanks to 0x72 for the art: https://0x72.itch.io/dungeontileset-ii
-ROTATION:
-OLED_ROTATION_0
+Brief: QMK oled animations demon
+===========================================
+Utilities for QMK oled animations
 Copyright (c) Marek Piechut
 MIT License
+                           ╔═╦═╦═╗
+                    ╔════╗ ║║║║║╔╝
+                    ║╔╗╔╗║ ║║║║║╚╗
+                    ╚╝║║╚╝ ║╠═╩╩═╝
+                      ║╠═╦═╣╚╦═╦╦═╦╗╔═╦═╦╦╗
+                      ║║╩╣═╣║║║║║╬║╚╣╬║╬║║║
+                      ╚╩═╩═╩╩╩╩═╩═╩═╩═╬╗╠╗║
+                                      ╚═╩═╝
 
-Todo el credito para el autor de las animaciones de crab, demon y music-bar
-https://github.com/marekpiechut/qmk-animations.git
+Copyright 2022 Marcos Ivan Chow Castro @mctechnology17
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
 
-SIENTETE LIBRE DE MODIFICAR EL CODIGO A TU GUSTO O DE OCUPAR LO QUE NECESITES
-NO OLVIDES REFERENCIAR A LOS AUTORES DE LOS CODIGOS QUE OCUPES
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-#pragma once
+// NOTE: temporary fix
+// #pragma once
+//
+// #define ANIM_SCROLL true
+// #define ANIM_FRAME_WIDTH 32
+// #define ANIM_SIZE 144
 
-#define ANIM_SCROLL true
-#define ANIM_FRAME_WIDTH 32
-#define ANIM_SIZE 144
+// NOTE: temporary fix
+#include "quantum.h"
+#include "print.h"
+#include "oled_driver.h"
+#include <stdio.h>
+#include "demon.h"
+#include "animation-utils.h"
 
-#include "animation-utils.c"
+// NOTE: comented because it is not working
+// #include "animation-utils.c"
 
-static void oled_render_anim(void) {
+// NOTE: static delete because it is not working
+void oled_render_anim(void) {
     // 'big_demon_idle_anim_f0', 32x36px
     static const char demon_idle_anim_f0[] PROGMEM = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0x00, 0x80, 0x40, 0x00, 0x00, 0x00, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x10, 0xb0, 0xf0, 0xfa, 0xfe, 0xfe, 0xfc, 0xfc, 0xff, 0xff, 0xfe, 0xe7, 0xe6, 0xff, 0xfe, 0xe7, 0xfc, 0xf8, 0xf8, 0xfc, 0xc4, 0x60, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x02, 0x83, 0x87, 0x07, 0x8f, 0xff, 0xff, 0xff, 0xff, 0xfb, 0xff,
                                                       0xf3, 0xff, 0xfb, 0xff, 0xf3, 0xff, 0xfb, 0x8f, 0x07, 0x00, 0x80, 0x80, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x80, 0xc6, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xfd, 0xff, 0xfc, 0xff, 0xfd, 0xff, 0xfd, 0xff, 0xfc, 0xff, 0xfd, 0xff, 0x63, 0xc1, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00, 0x00, 0x01, 0x0f, 0x0f, 0x0f, 0x03, 0x01, 0x01, 0x01, 0x01, 0x01, 0x01, 0x0f, 0x0f, 0x0f, 0x03, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
