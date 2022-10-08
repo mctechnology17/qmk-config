@@ -74,8 +74,9 @@ END
 menu_next() {
   clear
   echo "${YELLOW}==========================="
-  echo "| AnimationManager        |"
-  echo "|      by @mctechnology17 |"
+  echo "|     AnimationManager    |"
+  echo "|  by Marcos Chow Castro  |"
+  echo "|     @mctechnology17     |"
   echo "|-------------------------|"
   echo "| [y]    install anim     |"
   echo "| [n]    next options     |"
@@ -93,8 +94,9 @@ menu_next() {
 menu_previous() {
   clear
   echo "${YELLOW}==========================="
-  echo "| AnimationManager        |"
-  echo "|      by @mctechnology17 |"
+  echo "|     AnimationManager    |"
+  echo "|  by Marcos Chow Castro  |"
+  echo "|     @mctechnology17     |"
   echo "|-------------------------|"
   echo "| [h]      usage          |"
   echo "| [n]    previous         |"
@@ -130,17 +132,23 @@ if [ "$setup_continue" = "y" ]; then # y {{{
   if [ ! -d ~/qmk-config ]; then
     info 'Clone qmk-config to HOME'
     git clone https://github.com/mctechnology17/qmk-config.git
+    completed 'Done!'
   fi
   # check if qmk-config dir in qmk_firmware exists
   if [ ! -d ~/qmk_firmware/keyboards/crkbd/keymaps/qmk-config ]; then
     info 'Copy qmk-config keymaps to QMK repository'
     cp -rvf ~/qmk-config ~/qmk_firmware/keyboards/crkbd/keymaps
+    completed 'Done!'
   fi
 
   # delete the .git folder
   if [ -d ~/qmk_firmware/keyboards/crkbd/keymaps/qmk-config/.git ]; then
     info 'Delete the .git folder from qmk-config keymaps in QMK repository'
     rm -rfv ~/qmk_firmware/keyboards/crkbd/keymaps/qmk-config/.git
+    completed 'Done!'
+    info 'Delete the qmk-config repo in HOME'
+    rm -rfv ~/qmk-config
+    completed 'Done!'
   fi
 
   # check if qmk is installed
@@ -156,6 +164,14 @@ if [ "$setup_continue" = "y" ]; then # y {{{
     *) echo "For Windows: cd .\qmk_firmware\.build && start . " ;;
   esac
   cd -
+  completed 'Done!'
+  info 'Now you can flash your keyboard with the new firmware'
+  info 'Press the RESET button of the keyboard'
+  info 'Then press the button on the QMK Toolbox'
+  info 'Enjoy!'
+  info 'For modification of the firmware, edit the files in ~/qmk_firmware/keyboards/crkbd/keymaps/qmk-config'
+  info 'For more information, visit https://github.com/mctechnology17/qmk-config'
+  info 'For more information, visit https://www.youtube.com/c/mctechnology17'
   exit 0 #}}}
 elif [ "$setup_continue" = "h" ]; then # l {{{
   clear
